@@ -4,6 +4,7 @@
     --primary-color: #1a402a;
     --light-green-color: #008F3C;
     --white-color: #fff;
+    --black-color: #000;
 }
 
 *,
@@ -24,6 +25,13 @@ ol {
 
 a {
     text-decoration: none;
+}
+
+input {
+    border: none;
+    width: 350px;
+    padding: 10px 10px;
+    color: var(--black-color);
 }
 
 .container {
@@ -64,6 +72,7 @@ body::before {
 .navbar {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     padding: 35px 40px;
     position: relative;
@@ -530,6 +539,7 @@ body::before {
 /* Sign Up */
 .login-section {
     height: 100vh;
+    margin-top: 200px;
 }
 
 .signup-form {
@@ -537,21 +547,30 @@ body::before {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 
-.cancel-btn {
-    color: #000;
+.form-btn {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    cursor: pointer;
+    border: none;
+    padding: 15px 60px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
 }
 
-.signup-btn {
-    color: #000;
+.form-btn:hover {
+    background-color: var(--white-color);
+    color: var(--primary-color);
 }
 
 /* Login */
 .login-form {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
 }
 
 /* Media */

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script defer src="src/scripts/login.js"></script>
     <title>Document</title>
 </head>
 
@@ -20,38 +21,35 @@
                     <li><a href="#">КОНТАКТЫ</a></li>
                 </ul>
             </div>
-            <img id="loginBtn" class="login-btn" src="/src/images/user-regular.svg" alt="">
 
+            <a href="login.html">
+                <img id="loginBtn" class="login-btn" src="/src/images/user-regular.svg" alt="">
+            </a>
         </nav>
     </header>
 
     <section class="login-section">
         <div class="container">
-            <div class="signup-form">
+            <div id="signupForm" class="signup-form">
                 <label for="email">Email</label>
                 <input type="text" placeholder="Enter Email" name="email" required>
-
                 <label for="password">Password</label>
                 <input type="password" placeholder="Enter password" name="password" required>
-
                 <label for="password-repeat">Repeat Password</label>
                 <input type="password" placeholder="Repeat Password" name="password-repeat" required>
 
-                <div>
-                    <button type="button" class="cancel-btn">Cancel</button>
-                    <button type="submit" class="signup-btn">Sign Up</button>
-                </div>
+                <button type="submit" class="form-btn">Sign Up</button>
+                <button id="switchBtn" type="button" class="form-btn">Login</button>
             </div>
 
-            <div class="login-form">
+            <div id="loginForm" class="login-form">
                 <label for="email">Email</label>
                 <input type="text" placeholder="Enter Email" name="email" required>
                 <label for="password">Password</label>
                 <input type="password" placeholder="Enter password" name="password" required>
 
-                <div>
-                    <button type="submit" class="signup-btn">Login</button>
-                </div>
+                <button type="button" class="form-btn">Login</button>
+                <button id="signupBtn" type="button" class="form-btn">Sign up</button>
             </div>
         </div>
     </section>
