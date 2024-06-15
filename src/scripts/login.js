@@ -1,14 +1,14 @@
+const loginBtn = document.querySelector('#login');
+const registerBtn = document.querySelector('#register');
 const loginForm = document.querySelector('#loginForm')
-const signupForm = document.querySelector('#signupForm')
-const loginBtn = document.querySelector('#switchBtn')
-const signupBtn = document.querySelector('#signupBtn')
+const registerForm = document.querySelector('#registerForm')
 
-loginBtn.addEventListener('click', () => {
-    loginForm.style.display = 'flex'
-    signupForm.style.display = 'none'
+registerBtn.addEventListener('click', () => {
+    registerForm.style.display = 'flex';
+    loginForm.style.display = 'none'
 })
 
-signupBtn.addEventListener('click', () => {
-    loginForm.style.display = 'none'
-    signupForm.style.display = 'flex'
+loginBtn.addEventListener('click', () => {
+    loginForm.style.display = 'flex';
+    registerForm.style.display = 'none'
 })
