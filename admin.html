@@ -25,10 +25,33 @@
                 <img id="loginBtn" class="login-btn" src="/src/images/user-regular.svg" alt="">
             </a>
         </nav>
-    </header>
 
-    <section class="admin-container">
-    </section>
+        <section class="admin-container">
+            <form class="admin-form" action="" method="post">
+                <div class="input">
+                    <label for="productName">Имя продукта</label>
+                    <input type="text" placeholder="Введите имя продукта" name="productName">
+                </div>
+
+                <div class="input">
+                    <label for="productType">Категория продукта</label>
+                    <input type="text" placeholder="Введите тип продукта" name="productType">
+                </div>
+
+                <div class="input">
+                    <label for="productWeight">Вес продукта</label>
+                    <input type="text" placeholder="Введите вес продукта" name="productWeight">
+                </div>
+
+                <div class="input">
+                    <label for="productImg">Картинка продукта</label>
+                    <input type="url" placeholder="Введите ссылку на картинку" name="productImg">
+                </div>
+
+                <button class="form-btn" type="submit" method="post">Добавить</button>
+            </form>
+        </section>
+    </header>
 </body>
 
 </html>
