@@ -7,6 +7,10 @@
     --black-color: #000;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 *,
 ::before,
 ::after {
