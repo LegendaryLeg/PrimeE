@@ -53,7 +53,7 @@ input[type=url] {
 }
 
 .container {
-    width: 1820px;
+    max-width: 1820px;
     height: auto;
     margin: 0 auto;
     position: relative;
@@ -145,7 +145,7 @@ body::before {
 .main-section {
     display: flex;
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
 
 }
 
@@ -198,7 +198,7 @@ body::before {
 .gallery {
     display: flex;
     align-items: center;
-    width: 1250px;
+    max-width: 900px;
     padding: 20px;
     gap: 200px;
     overflow: hidden;
@@ -282,7 +282,6 @@ body::before {
 .product-section {
     display: flex;
     align-items: center;
-    height: 70vh;
     box-shadow: 0px -200px 100px -100px rgba(0, 0, 0, 1) inset;
     -webkit-box-shadow: 0px -200px 100px -100px rgba(0, 0, 0, 1) inset;
     -moz-box-shadow: 0px -200px 100px -100px rgba(0, 0, 0, 1) inset;
@@ -495,6 +494,11 @@ body::before {
     height: 70vh;
 }
 
+#map-container{
+    width: 100%;
+    height: 70vh;
+}
+
 .contacts-list {
     display: flex;
     flex-direction: column;
@@ -674,22 +678,6 @@ body::before {
 }
 
 /* Media */
-@media(max-width: 1440px) {
-    .container {
-        width: 1340px;
-    }
-}
-
-@media(max-width: 1024px) {
-    .container {
-        width: 924px;
-    }
-
-    .about-content {
-        width: 100%;
-    }
-}
-
 @media(max-width: 768px) {
     section {
         width: 100%;

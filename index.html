@@ -8,6 +8,8 @@
     <script defer src="https://kit.fontawesome.com/94fbfaaca2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
     <script defer src="/src/scripts/script.js"></script>
+    <script defer src="https://mapgl.2gis.com/api/js/v1"></script>
+    <script defer src="/src/scripts/map.js"></script>
     <title>Prime Empire</title>
 </head>
 
@@ -152,7 +154,8 @@
                 <div id="contacts" class="contacts">
                     <div class="contacts-title">Наши контакты</div>
                     <div class="contacts-content">
-                        <img class="contacts-img" src="/src/images/adress.png" alt="">
+                        <!-- <img class="contacts-img" src="/src/images/adress.png" alt=""> -->
+                        <div id="map-container"></div>
                         <ul class="contacts-list">
                             <li><span>Городской:</span> 12013514000</li>
                             <li><span>Сотовый:</span> 447458196925</li>
