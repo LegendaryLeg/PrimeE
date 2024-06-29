@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="/src/scripts/script.js"></script>
+    <script defer src="https://mapgl.2gis.com/api/js/v1"></script>
+    <script defer src="/src/scripts/map.js"></script>
     <title>Document</title>
 </head>
 
@@ -13,10 +17,9 @@
             <div class="nav-left">
                 <a class="nav-logo" href="index.html">PRIME EMPIRE</a>
                 <ul class="nav-list">
-                    <li><a href="#">О НАС</a></li>
+                    <li><a href="index.html#about">О НАС</a></li>
                     <li><a href="store.html">МАГАЗИН</a></li>
-                    <li><a href="#">ТРЕНД</a></li>
-                    <li><a href="#">КОНТАКТЫ</a></li>
+                    <li><a href="index.html#contacts">КОНТАКТЫ</a></li>
                     <li><a href="admin.html">АДМИН</a></li>
                 </ul>
             </div>
@@ -25,6 +28,15 @@
             </a>
         </nav>
     </header>
+
+    <section>
+        <div id="map-container"></div>
+        <div id="map-info">
+            <span>Ауэзова 1а, офис 1 этаж 2.</span>
+            <span>+7‒778‒926‒80‒07</span>
+            <span>primebusiness@gmail.com</span>
+        </div>
+    </section>
 </body>
 
 </html>

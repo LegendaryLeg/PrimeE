@@ -336,7 +336,7 @@ body::before {
     justify-content: space-around;
     align-items: center;
     background-color: var(--primary-color);
-    height: 200px;
+    height: 100px;
     color: var(--white-color);
 }
 
@@ -540,45 +540,40 @@ body::before {
 }
 
 /* Store */
-.store {
+.store{
     position: relative;
-    height: 100vh;
-}
-
-.store-content {
-    display: flex;
-}
-
-.category {
-    text-align: start;
-    height: 100vh;
-    border-right: 1px solid var(--white-color);
-    padding: 20px;
-}
-
-.category-list {
+    z-index: 1;
+    margin: 0 auto;
+    color: var(--white-color);
     display: flex;
     flex-direction: column;
-    gap: 5px;
-}
-
-.category-list:last-child {
-    margin-top: 20px;
-}
-
-.merch-box {
-    display: flex;
-    padding: 20px;
+    align-items: center;
     gap: 20px;
+    padding: 50px 0;
 }
 
-.merch-item {
-    border: 1px solid var(--white-color);
-    height: 450px;
+.store h3{
+    font-size: 36px;
 }
 
-.merch-img {
-    width: 250px;
+.store-product-section{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.store-product-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.store-product-img{
+    max-width: 250px;
 }
 
 /* Sign Up */
@@ -603,7 +598,7 @@ body::before {
     padding: 15px 60px;
     font-weight: bold;
     transition: 0.3s ease-in-out;
-    width: 350px;
+    max-width: 350px;
 }
 
 .form-btn:hover {
@@ -619,8 +614,18 @@ body::before {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    width: 350px;
+    max-width: 350px;
     margin: 0 auto 200px auto;
+    color: var(--white-color);
+}
+
+.span-anchor{
+    color: var(--white-color);
+    transition: 0.3s ease-in-out;
+}
+
+.span-anchor:hover{
+    color: var(--light-green-color);
 }
 
 #register {
@@ -648,6 +653,7 @@ body::before {
     position: relative;
     z-index: 1;
     margin: 0 auto;
+    color: var(--white-color);
 }
 
 .admin-form {
@@ -655,7 +661,7 @@ body::before {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    width: 500px;
+    max-width: 500px;
     margin: 100px auto;
 }
 
@@ -816,4 +822,17 @@ body::before {
     .footer-btn {
         display: none;
     }
+}
+
+@media (max-width: 425px){
+    input[type=text]{
+        max-width: 250px;
+    }
+    input[type=url]{
+        max-width: 250px;
+    }
+    input[type=password]{
+        max-width: 250px;
+    }
+    
 }
