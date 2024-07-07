@@ -4,25 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Style -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Scripts -->
+    <script defer src="src/scripts/script.js"></script>
+    <script defer src="src/scripts/navbar.js"></script>
     <title>Prime Empire | Store</title>
 </head>
 
 <body>
     <header>
-        <nav class="navbar nav-center">
+        <nav class="navbar">
             <div class="nav-left">
+                <a class="nav-logo" href="index.html">PRIME EMPIRE</a>
                 <ul class="nav-list">
                     <li><a href="index.html#about">О НАС</a></li>
                     <li><a href="store.html">МАГАЗИН</a></li>
-                    <a class="nav-logo" href="index.html">PRIME EMPIRE</a>
                     <li><a href="index.html#contacts">КОНТАКТЫ</a></li>
                     <li><a href="admin.html">АДМИН</a></li>
                 </ul>
             </div>
-            <a href="login.html">
-                <i id="loginBtn" class="fa-solid fa-user fa-2xl login-btn"></i>
-            </a>
+            <div class="nav-right">
+                <a href="#"><i class="fa-solid fa-cart-shopping fa-2xl login-btn"></i></a>
+                <a href="login.html"><i id="loginBtn" class="fa-solid fa-user fa-2xl login-btn"></i></a>
+                <i id="burgerBtn" class="fa-solid fa-bars fa-2xl burger-btn"></i>
+            </div>
+
+            <div id="navBurger" class="nav-burger">
+                <ul>
+                    <li><a href="index.html#about">О нас</a></li>
+                    <li><a href="store.html">Магазин</a></li>
+                    <li><a href="index.html#contacts">Контакты</a></li>
+                    <li><a href="login.html">Войти</a></li>
+                    <li><a href="admin.html">Админ</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
