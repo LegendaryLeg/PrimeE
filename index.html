@@ -10,7 +10,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Style -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Scripts -->
     <script defer src="src/scripts/script.js"></script>
+    <script defer src="src/scripts/navbar.js"></script>
     <script defer src="https://mapgl.2gis.com/api/js/v1"></script>
     <script defer src="src/scripts/map.js"></script>
     <title>Prime Empire</title>
@@ -28,9 +30,20 @@
                     <li><a href="admin.html">АДМИН</a></li>
                 </ul>
             </div>
-            <a href="login.html">
-                <i id="loginBtn" class="fa-solid fa-user fa-2xl login-btn"></i>
-            </a>
+            <div class="nav-right">
+                <a href="#"><i class="fa-solid fa-cart-shopping fa-2xl login-btn"></i></a>
+                <a href="login.html"><i id="loginBtn" class="fa-solid fa-user fa-2xl login-btn"></i></a>
+                <i id="burgerBtn" class="fa-solid fa-bars fa-2xl burger-btn"></i>
+            </div>
+
+            <div id="navBurger" class="nav-burger">
+                <ul>
+                    <li><a href="#about">О НАС</a></li>
+                    <li><a href="store.html">МАГАЗИН</a></li>
+                    <li><a href="#contacts">КОНТАКТЫ</a></li>
+                    <li><a href="admin.html">АДМИН</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 

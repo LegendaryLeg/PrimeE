@@ -109,6 +109,11 @@ body::before {
     font-family: inter;
 }
 
+.nav-right {
+    display: flex;
+    gap: 15px;
+}
+
 .nav-logo {
     font-size: 36px;
     font-weight: bold;
@@ -134,10 +139,24 @@ body::before {
 .nav-list>li>a:hover {
     transition: 0.3s ease-in-out;
     color: var(--light-green-color);
+}
 
+.nav-burger {
+    display: none;
+}
+
+.nav-center {
+    justify-content: center !important;
 }
 
 .login-btn {
+    margin: auto 0;
+    cursor: pointer;
+    color: var(--white-color);
+}
+
+.burger-btn {
+    display: none;
     margin: auto 0;
     cursor: pointer;
     color: var(--white-color);
@@ -553,6 +572,7 @@ body::before {
     align-items: center;
     gap: 20px;
     padding: 50px 0;
+    font-family: inter;
 }
 
 .store h3 {
@@ -620,6 +640,7 @@ body::before {
     max-width: 350px;
     margin: 0 auto 200px auto;
     color: var(--white-color);
+    font-family: inter;
 }
 
 .span-anchor {
@@ -638,13 +659,14 @@ body::before {
 .register-form {
     position: relative;
     z-index: 1;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     gap: 10px;
     max-width: 350px;
     margin: 0 auto 200px auto;
     color: var(--white-color);
+    font-family: inter;
 }
 
 #login {
@@ -657,6 +679,7 @@ body::before {
     z-index: 1;
     margin: 0 auto;
     color: var(--white-color);
+    font-family: inter;
 }
 
 .admin-form {
@@ -824,6 +847,37 @@ body::before {
 
     .footer-btn {
         display: none;
+    }
+
+    .burger-btn {
+        display: block;
+    }
+
+    .nav-burger {
+        font-family: inter;
+        display: block;
+        position: absolute;
+        width: 100%;
+        right: 0;
+        top: 100px;
+        background: var(--primary-color);
+        padding: 20px;
+        transform: translateX(100%);
+        transition: 0.3s ease-in-out;
+    }
+
+    .active {
+        transform: translateX(0%);
+    }
+
+    .nav-burger ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-burger ul li a {
+        color: var(--white-color);
     }
 }
 
