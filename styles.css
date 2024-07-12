@@ -101,6 +101,7 @@ body::before {
     z-index: 3;
     border-bottom: 1px solid #fff;
     color: var(--white-color);
+    overflow-x: hidden;
 }
 
 .nav-left {
@@ -856,7 +857,7 @@ body::before {
     .nav-burger {
         font-family: inter;
         display: block;
-        position: absolute;
+        position: fixed;
         width: 100%;
         right: 0;
         top: 100px;
